@@ -1,5 +1,5 @@
 import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { ScreeningEntity } from './';
+import { ScreeningEntity } from '../../../src/screenings/entities/screening.entity';
 
 @Entity('rooms')
 export class RoomEntity {
