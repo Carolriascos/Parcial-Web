@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { RoomEntity } from './entities/room.entity';
-import { ScreeningEntity } from './entities/order.entity';
+import { RoomEntity } from './../rooms/entities/room.entity';
+import { ScreeningEntity } from './entities/screening.entity';
 import { ScreeningController } from './screenings.controller';
-import { ScreeningService } from './orders.service';
+import { ScreeningService } from './screenings.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([RoomEntity, ScreeningEntity])],

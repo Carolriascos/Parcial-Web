@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CreateScreeningDto } from './';
+import { CreateScreeningDto } from './dto/create-screening.dto';
 import { RoomEntity } from '../rooms/entities/room.entity';
-import { ScreeningEntity } from './entities/order.entity';
-import { UpdateScreeningDto } from './update-order.dto';
+import { ScreeningEntity } from './entities/screening.entity';
+import { UpdateScreeningDto } from './dto/update-screening.dto';
 
 @Injectable()
 export class ScreeningService {
